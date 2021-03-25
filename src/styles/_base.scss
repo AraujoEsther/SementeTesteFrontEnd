@@ -1,0 +1,258 @@
+$color-dark-gray: #303030;
+$color-text: #707070;
+$color-primary: white;
+$color-secundary: #B0CE09;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: $color-text;
+}
+
+body{
+    height: 100vh;
+    font: 400 1.8rem/1 'Merriweather', sans-serif;
+    color: $color-text;
+
+    display: flex;
+}
+
+h1{ 
+    font-size: 48px; 
+}
+
+h2{ 
+    font-size: 24px; 
+    margin-bottom: 24px;
+}
+
+h3{ 
+    font-size: 22px; 
+    margin-bottom: 22px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+p{ 
+    font-size: 18px; 
+    line-height: 34px;
+    margin-bottom: 24px;
+}
+
+
+:root{
+    font-size: 62.5%;
+}
+
+.container{
+    width: 45%;
+    margin: 40px auto;
+}
+
+.article-header{
+
+    h1{
+        color: $color-dark-gray;
+        margin-bottom: 38px;
+    }
+
+    .article-author{
+        display: flex;
+        margin-bottom: 62px;
+
+        img{
+            width: 60px;
+            margin-right: 14px;
+        }
+
+        .name-autor{
+
+            a{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+                color: $color-text;
+            }
+            span{
+                font-size: 12px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+
+            }
+        }
+        .social-media{
+            display: flex;
+            margin-left: 30%;
+            align-items: center;
+
+            img{
+                width: 30px;
+            }
+            
+            a{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.article-content{
+
+    .article-item-focus{
+        border-left: 4px solid $color-dark-gray;
+        font-style: italic;
+        margin-bottom: 65px;
+
+        p{
+            padding-left: 12px;
+            line-height: 26px;
+        }
+
+        h2{
+            padding-left: 12px;
+        }
+    }
+   
+}
+
+.contente-article-item{ 
+    margin-bottom: 68px;
+
+    .img-anatomia{
+        width: 676px;
+    }
+
+    .image-legend{
+        font-style: italic;
+        font-size: 14px;
+        text-align: center;
+        line-height: 24px;
+        margin-top: 18px;
+    }
+
+    .article-item-focus{
+        margin-top: 68px;
+    }
+   
+}
+
+.article-links{
+
+    ul li{
+        margin-bottom: 35px;
+    }
+}
+
+.article-tags{
+
+    margin-bottom: 68px;
+
+    ul{
+        list-style: none;
+        display: flex;
+
+       li{
+           margin-right: 10px;
+           background-color: #a8b94829;
+           border-radius: 5px;
+           padding: 5px;
+
+          a{
+            font-family: 'Poppins';
+            font-weight: 400;
+            text-decoration: none;
+
+            color: $color-text;
+           
+            
+          }
+        }
+    }
+    
+}
+
+.related-article{
+    
+    width: 100%;
+    border-top: 1px solid #B0CE09;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.related-article{
+    width: 1000px;
+    display: flex;
+    margin: auto;
+    
+    padding-top: 4rem;
+
+    article{
+        flex: auto;
+        flex-wrap: wrap;
+        gap: 0;
+
+        width: 30%;
+        padding: 2rem 2rem;
+        overflow: hidden;
+
+        a{
+            text-decoration: none;
+        }
+
+       img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+
+            transition: all 0.7s ease;
+        }
+
+        img:hover{
+           transform:scale(1.2);
+        }
+
+        h4{
+            margin: 20px 0;
+        }
+
+    }
+
+}
+
+
+
+@media (max-width: 1140px){
+    
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo{
+            margin-right: 320px !important;
+        }
+    }
+
+    .container{
+        width: 680px;
+    }
+
+    .footer-content{
+        padding: 0 2rem;
+
+        .footer-menu{
+            width: 32% !important;
+        }
+    }
+
+}
+
